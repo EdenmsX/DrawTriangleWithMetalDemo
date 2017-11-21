@@ -31,6 +31,7 @@ class Renderer: NSObject {
         super.init()
         
         buildModel()
+        buildPipelineState()
     }
     
     //处理顶点
