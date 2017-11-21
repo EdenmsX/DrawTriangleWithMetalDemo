@@ -16,8 +16,10 @@ vertex float4 vertex_shader(const device packed_float3 * vertices[[buffer(0)]], 
 
 //上色
 fragment half4 fragment_shader(){
-    //红色
+    //红色 (RGBA)
     return half4(1,0,0,1);
+    //黄色
+//    return half4(1,1,0,1);
 }
 
 

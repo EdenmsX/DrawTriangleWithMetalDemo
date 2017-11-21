@@ -20,6 +20,17 @@ class Renderer: NSObject {
         -1,-1,0,
         1,-1,0
     ]
+    //如果要绘制矩形,只需要改变数组中的顶点即可
+    //修改渲染的颜色只需要修改metal文件中的fragment_shader方法的返回值
+    //但是直接这样写会有很多重复的点,浪费内存
+    var vertices_sequare:[Float] = [
+        -1,1,0,
+        -1,-1,0,
+        1,-1,0,
+        1,-1,0,
+        1,1,0,
+        -1,1,0
+    ]
     
     //创建管道状态及缓冲区(用来存放顶点)
     var pipelineState: MTLRenderPipelineState?
